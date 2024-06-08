@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"root_create_dynamodb_backend","Source":"./modules/dynamodb","Dir":"modules/dynamodb"},{"Key":"root_create_s3_backend","Source":"./modules/S3_backend","Dir":"modules/S3_backend"}]}
