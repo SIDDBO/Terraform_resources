@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "backend_bucket" {
   bucket = "var.bucket_name"
 }
 
-resource "aws_s3_bucket_versioning" "versioning_S3_backend" {
+resource "aws_s3_bucket_versioning" "versioning_s3_backend" {
   bucket = aws_s3_bucket.backend_bucket.id
   versioning_configuration {
     status = "Enabled"
@@ -18,7 +18,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "backend_S3_encryt
     }
   }
   depends_on = [ 
-    aws_s3_bucket_versioning.versioning_S3_backend 
+    aws_s3_bucket_versioning.versioning_s3_backend 
     ]
 }
 
